@@ -1,0 +1,7 @@
+{
+  "name": "LifeWallet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
