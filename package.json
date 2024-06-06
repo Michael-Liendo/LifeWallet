@@ -1,5 +1,5 @@
 {
-  "name": "LifeWallet",
+  "name": "life-wallet",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -7,9 +7,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test.e2e": "cypress run",
-    "test.unit": "vitest",
-    "lint": "eslint"
+    "lint": "biome format ./src && biome check ./src",
+    "format": "biome format --write ./src && biome check --write ./src",
+    "format:unsafe": "biome format --write ./src && biome check --apply-unsafe ./src",
+    "android:open": "cap open android",
+    "android:run": "cap run android",
+    "android:build": "cap build android",
+    "android:sync": "cap sync android"
   },
   "dependencies": {
     "@capacitor/app": "6.0.0",
@@ -28,23 +32,19 @@
     "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.0",
     "@capacitor/cli": "6.0.0",
-    "@testing-library/dom": ">=7.21.4",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-legacy": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.1",
-    "cypress": "^13.5.0",
-    "eslint": "^8.35.0",
-    "eslint-plugin-react": "^7.32.2",
+    "autoprefixer": "^10.4.19",
     "jsdom": "^22.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
     "terser": "^5.4.0",
     "typescript": "^5.1.6",
-    "vite": "^5.0.0",
-    "vitest": "^0.34.6"
+    "vite": "^5.0.0"
   },
-  "description": "An Ionic project"
+  "description": "Budget and Personal Finance Application"
 }
