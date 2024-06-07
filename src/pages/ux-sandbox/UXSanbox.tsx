@@ -1,6 +1,6 @@
 import { IonContent, IonPage } from '@ionic/react';
 import { useHistory, useParams } from 'react-router';
-import ButtonDemo from './demos/ButtonDemo';
+import { ButtonDemo } from '.';
 
 interface Component {
   component: () => JSX.Element;
