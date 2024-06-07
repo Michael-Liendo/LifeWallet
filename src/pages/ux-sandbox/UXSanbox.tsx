@@ -7,15 +7,7 @@ interface Component {
   name: string;
 }
 
-const components: Component[] = [
-  { name: 'button', component: ButtonDemo },
-  {
-    name: 'input',
-    component() {
-      return <>hola</>;
-    },
-  },
-];
+const components: Component[] = [{ name: 'button', component: ButtonDemo }];
 
 type SortedComponent = { name: string };
 
