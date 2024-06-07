@@ -46,7 +46,7 @@ export default function UXSandbox() {
           </select>
         </div>
 
-        <div className="mx-96 border rounded-lg">
+        <div className="mx-20 border rounded-lg">
           {RenderComponent && <RenderComponent />}
         </div>
       </IonContent>
