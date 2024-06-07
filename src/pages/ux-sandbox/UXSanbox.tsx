@@ -34,6 +34,10 @@ export default function UXSandbox() {
             name="component-selection"
             id="component-selection"
           >
+            <option disabled selected>
+              {' '}
+              -- select an option --{' '}
+            </option>
             {components.sort(sortedByName).map((component) => (
               <option key={component.name} value={component.name}>
                 {component.name}
