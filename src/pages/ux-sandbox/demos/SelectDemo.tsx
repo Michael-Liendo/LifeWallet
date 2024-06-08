@@ -13,7 +13,6 @@ export function SelectDemo() {
         <Select disabled placeholder="Placeholder">
           <option>First option</option>
         </Select>
-        <div className="h-" />
         <Spacer y={'3'} />
 
         <Select label="Label for select" placeholder="Placeholder">
