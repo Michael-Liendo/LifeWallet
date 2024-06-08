@@ -1,13 +1,14 @@
 import { IonContent, IonPage } from '@ionic/react';
 import { useHistory, useParams } from 'react-router';
 import { ButtonDemo } from '.';
+import { InputDemo } from '.';
 
 interface Component {
   component: () => JSX.Element;
   name: string;
 }
 
-const components: Component[] = [{ name: 'button', component: ButtonDemo }];
+const components: Component[] = [{ name: 'button', component: ButtonDemo }, {name: 'input', component: InputDemo}];
 
 type SortedComponent = { name: string };
 
