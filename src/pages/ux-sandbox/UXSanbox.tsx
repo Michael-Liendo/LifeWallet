@@ -1,8 +1,8 @@
 import { IonContent, IonPage } from '@ionic/react';
 import { useHistory, useParams } from 'react-router';
 import { ButtonDemo } from '.';
-import { SelectDemo } from './demos/SelectDemo';
 import Select from '../../components/Select';
+import { SelectDemo } from './demos/SelectDemo';
 
 const components: Component[] = [
   { name: 'button', component: ButtonDemo },
