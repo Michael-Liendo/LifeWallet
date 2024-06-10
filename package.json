@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "lint": "biome format ./src && biome check ./src",
     "format": "biome format --write ./src && biome check --write ./src",
-    "format:unsafe": "biome format --write ./src && biome check --apply-unsafe ./src",
+    "format:unsafe": "biome format --write ./src && biome check --write --unsafe ./src",
     "android:open": "cap open android",
     "android:run": "cap run android",
     "android:build": "cap build android",

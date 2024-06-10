@@ -34,4 +34,4 @@ const PrivatesRoutes: JSX.Element[] = [];
 
 const AuthRoutes: JSX.Element[] = [];
 
-const PublicRoutes: JSX.Element[] = [];
+const _PublicRoutes: JSX.Element[] = [];
