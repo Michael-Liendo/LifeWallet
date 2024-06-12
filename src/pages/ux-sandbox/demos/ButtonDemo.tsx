@@ -8,6 +8,8 @@ export function ButtonDemo() {
         <Button disabled type="button">
           Disabled
         </Button>
+        <Button type="reset">Reset</Button>
+        <Button type="submit">Submit</Button>        
       </div>
     </>
   );
