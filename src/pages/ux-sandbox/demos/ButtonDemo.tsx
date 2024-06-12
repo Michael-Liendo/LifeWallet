@@ -9,7 +9,7 @@ export function ButtonDemo() {
           Disabled
         </Button>
         <Button type="reset">Reset</Button>
-        <Button type="submit">Submit</Button>        
+        <Button type="submit">Submit</Button>
       </div>
     </>
   );
