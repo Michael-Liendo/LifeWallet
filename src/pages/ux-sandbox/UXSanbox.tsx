@@ -1,12 +1,12 @@
 import { IonContent, IonPage } from '@ionic/react';
 import { useHistory, useParams } from 'react-router';
-import { ButtonDemo } from '.';
+import { ButtonDemo, InputDemo, SelectDemo } from '.';
 import Select from '../../components/Select';
-import { SelectDemo } from './demos/SelectDemo';
 
 const components: Component[] = [
   { name: 'button', component: ButtonDemo },
   { name: 'select', component: SelectDemo },
+  { name: 'input', component: InputDemo },
 ];
 
 export default function UXSandbox() {
