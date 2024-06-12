@@ -3,7 +3,7 @@ export default function Button({ children, type, disabled }: ButtonProps) {
     <>
       <button
         disabled={disabled}
-        className="bg-blue-500 rounded-xl text-white m-1 py-2 px-4 disabled:bg-gray-600"
+        className="bg-blue-500 rounded-xl text-white py-2 px-4 disabled:bg-gray-600"
         type={type}
       >
         {children}
